@@ -1,0 +1,13 @@
+body {
+    font-size: 16px;
+}
+
+#main {
+    min-width: 20rem;
+    margin: 2rem auto;
+    margin-top: 3rem;
+}
+
+#main input {
+    width: 3rem;
+}
