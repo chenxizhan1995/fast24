@@ -10,11 +10,18 @@
 </head>
 <body>
     <div id="main" class="main">
-        <input id="a" readonly value="-"/>
-        <input id="b" readonly value="-"/>
-        <input id="c" readonly value="-"/>
-        <input id="d" readonly value="-"/>
-        <button id="btn-next">下一组</button>
+        <div class="msg">
+            <label for="start-time" id="">开始时间:</label>
+            <input type="text" id="start-time" size="10" readonly>
+            <span id="msg"></span>
+        </div>
+        <div class="game">
+            <input id="a" readonly value="-"/>
+            <input id="b" readonly value="-"/>
+            <input id="c" readonly value="-"/>
+            <input id="d" readonly value="-"/>
+            <button id="btn-next">下一组</button>
+        </div>
     </div>
 </body>
 </html>

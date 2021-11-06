@@ -4,16 +4,14 @@ document.addEventListener("DOMContentLoaded", main);
 
 const deck = [];
 let el = [];
+const startDate = new Date();
 
 function main(){
     console.debug("world")
     document.getElementById("btn-next").addEventListener("click", next);
 
     for (let i = 1; i<=13; i++){
-        deck.push(i);
-        deck.push(i);
-        deck.push(i);
-        deck.push(i);
+        deck.push(i, i, i ,i);
     }
     shuffle(deck)
     console.debug(deck)
@@ -23,6 +21,9 @@ function main(){
         el.push(e);
     }
     console.debug(el);
+
+    document.getElementById("start-time").value = startDate.getHours()
+        + ":" + startDate.getMinutes() + ":" + startDate.getSeconds();
 }
 
 function next(){
@@ -31,6 +32,9 @@ function next(){
         for (let e of el){
             e.value = deck.pop();
         }
+    } else {
+        document.getElementById("msg").textContent = "扑克牌用完了";
+        this.disabled = true;
     }
 }
 /**

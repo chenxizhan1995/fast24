@@ -7,7 +7,9 @@ body {
     margin: 2rem auto;
     margin-top: 3rem;
 }
-
-#main input {
+.main > div {
+    margin-top: 1rem;
+}
+.game input {
     width: 3rem;
 }
